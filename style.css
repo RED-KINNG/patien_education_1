@@ -43,7 +43,10 @@ section {
   flex-direction: column;
 }
 .title-group {
-  margin-top: 80px;
+  margin-top: 90px;
+}
+.title {
+ margin-bottom: 20px;
 }
 
 h1 {
@@ -51,6 +54,8 @@ h1 {
   font-size: 50px;
   font-weight: bold;
   margin: 0;
+  line-height: 4.2rem;
+ 
 }
 
 h2 {
@@ -58,6 +63,7 @@ h2 {
   font-size: 32px;
   font-weight: normal;
   margin: 0;
+  text-align: center;
 }
 
 /* Navigation */
@@ -417,6 +423,10 @@ video {
   cursor: pointer;
 }
 
+.volume-icon:hover {
+  color: var(--secondary-color);
+}
+
 .volume-range {
   height: 8px;
   width: 100px;
@@ -450,6 +460,14 @@ video {
 .time {
   position: relative;
   top: 10px;
+}
+
+
+.time:hover {
+  color: var(--secondary-color);
+}
+.speed:hover {
+  color: var(--secondary-color);
 }
 
 /* Playback Speed */
@@ -492,6 +510,9 @@ select > option {
 /* Fullscreen */
 .fullscreen {
   cursor: pointer;
+}
+.fullscreen:hover {
+  color: var(--secondary-color);
 }
 
 .video-fullscreen {
@@ -572,6 +593,24 @@ select > option {
     height: 97.5vh;
     border-radius: 0;
   }
+  .image-container {
+    margin: 90px;
+    text-align: center;
+
+  }
+
+  iframe{
+    width: auto;
+    object-fit: cover;
+    height: 200px;
+  }
+
+  img{
+    width: auto;
+    height: 200px;
+  }
+
+
 }
 
 
@@ -579,8 +618,9 @@ select > option {
 
 @media screen and (max-width: 600px) {
   h1 {
-      font-size: 25px;
+      font-size: 35px;
       text-align: center;
+      line-height: 2.2rem;
   }
 
   h2 {
@@ -601,5 +641,16 @@ select > option {
   nav {
     display: block;
     text-align: center;
+    line-height: 1.2rem;
+    font-size: 15px;
+
   }
+
+  img{
+    width: auto;
+    height: 200px;
+  }
+
+
+
 }
