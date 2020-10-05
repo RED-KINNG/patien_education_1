@@ -306,8 +306,8 @@ input:checked + .slider::before {
 }
 /* this is the video container */
 .player {
-  max-width: 70vw;
-  min-width: 300px;
+  max-width: 90vw;
+  min-width: 1000px;
   border: 7px solid var(--secondary-color);
   border-radius: 10px;
   background: black;
